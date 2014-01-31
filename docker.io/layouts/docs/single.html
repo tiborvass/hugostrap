@@ -1,0 +1,18 @@
+{{ template "chrome/header.html" . }}
+
+	<div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="bs-sidebar hidden-print" role="complementary">
+            <!--<ul class="nav bs-sidenav">-->
+				{{ .TableOfContents }}
+		  </div>
+        </div>
+        <div class="col-md-9" role="main">
+          {{ .Content }}
+        </div>
+      </div>
+
+	</div>
+{{ template "chrome/footer.html" . }}

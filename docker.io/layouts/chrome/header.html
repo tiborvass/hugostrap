@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ .Title }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    	{{ template "chrome/includes.html" . }}
+	</head>
+	<body>
+		<a class="sr-only" href="#content">Skip to main content</a>
+		{{ template "chrome/menu.html" . }}
+		<div id="content">
